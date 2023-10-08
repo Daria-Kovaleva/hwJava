@@ -42,7 +42,10 @@ public class TaskLaptop {
         for (Laptop laptop : laptopSet) {
             if (laptop.getRam() == ramOfUser && laptop.getCapacityHD() == capacityHDOfUser) {
                 System.out.println(laptop);
-            } 
+            } else {
+                System.out.println("Подходящих параметрам ноутбуков нет.");
+                break;
+            }
         }        
     }
 }
