@@ -57,11 +57,11 @@ public class Laptop {
         }
         Laptop laptop = (Laptop)o;
 
-        return Objects.equals(ram, laptop.ram) && Objects.equals(capacityHD, laptop.capacityHD);
+        return Objects.equals(name, laptop.name) && Objects.equals(ram, laptop.ram) && Objects.equals(capacityHD, laptop.capacityHD) && Objects.equals(os, laptop.os) && Objects.equals(diagonal, laptop.diagonal) && Objects.equals(color, laptop.color);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ram, capacityHD, diagonal);
+        return Objects.hash(ram, capacityHD);
     }
 }
